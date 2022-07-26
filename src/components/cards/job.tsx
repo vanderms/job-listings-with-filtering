@@ -25,7 +25,7 @@ export const JobCard: React.FC<{ job: Job }> = ({ job }) => {
         bg-neutral-50 grid grid-cols-1
         xl:grid-cols-[5.5rem,18.75rem,1fr] xl:px-10 xl:pt-8 xl:pb-[1.9375rem] xl:gap-6 xl:mt-0
         ${job.featured ? "border-l-[0.3125rem] border-primary " : ""}
-
+        shadow-[0px_15px_20px_-5px_rgba(13,113,130,0.15)]
         `}
     >
       <div className="w-12 h-12 [transform:translateY(-1.5rem)] xl:w-[5.5rem] xl:h-[5.5rem] xl:[transform:unset]">
