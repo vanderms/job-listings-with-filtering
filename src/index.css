@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::after,
+  *::before {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+  }
+
+  :root {
+    --primary: #5ca5a5;
+    --primary-300: #5ca5a51a;
+    --neutral-50: #fff;
+    --neutral-100: #effafa;
+    --neutral-500: #7c8f8f;
+    --neutral-800: #2b3939;
+  }
+}
