@@ -23,6 +23,7 @@ interface JobsState {
   filters: string[];
   addFilter: (value: string) => void;
   removeFilter: (value: string) => void;
+  clearFilters: () => void;
 }
 
 function filterJobs(filters: string[], jobs: Job[]): Job[] {
@@ -55,5 +56,10 @@ export const useJobs = create<JobsState>((set, get) => ({
       const filteredJobs = filterJobs(filters, [...get().jobs]);
       set((state) => ({ ...state, filters, filteredJobs }));
     }
+  },
+  clearFilters: () => {
+    const filters: string[] = [];
+    const filteredJobs = [...get().jobs];
+    set((state) => ({ ...state, filters, filteredJobs }));
   },
 }));

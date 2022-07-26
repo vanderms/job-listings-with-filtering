@@ -19,7 +19,8 @@
     --neutral-800: #2b3939;
   }
 
-  body{
+  body {
     background-color: theme(colors.neutral-100);
+    min-height: 100vh;
   }
 }
