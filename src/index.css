@@ -18,4 +18,8 @@
     --neutral-500: #7c8f8f;
     --neutral-800: #2b3939;
   }
+
+  body{
+    background-color: theme(colors.neutral-100);
+  }
 }
