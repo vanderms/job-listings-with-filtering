@@ -59,7 +59,7 @@ export const JobCard: React.FC<{ job: Job }> = ({ job }) => {
         </div>
         <div
           className={`mt-[0.4375rem] flex gap-2.5 text-neutral-500 text-[1rem] leading-[1.5rem] 
-        items-center md:text-[1.125rem]`}
+        items-center md:text-[1.125rem] xl:gap-4`}
         >
           <span>{job.postedAt}</span>
           <span className="text-[0.5rem]"> &#9679;</span>
@@ -70,7 +70,7 @@ export const JobCard: React.FC<{ job: Job }> = ({ job }) => {
       </div>
       <div className="my-4 w-full h-0 border border-[#B7C4C4] xl:hidden"></div>
       <div className="flex gap-4 flex-wrap self-center justify-self-end">
-        {[job.level, job.role, ...job.languages, ...job.tools].map((filter) => (
+        {[job.role, job.level, ...job.languages, ...job.tools].map((filter) => (
           <Button raw={false} key={filter}>
             {filter}
           </Button>

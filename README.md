@@ -12,8 +12,8 @@ That's my solution to the challenge [Job Listing with filtering](https://www.fro
 - Tailwind
 
 
-# Links:
+## Links:
 
-- Preview: <>
+- Preview: <https://job-listings-with-filtering.pages.dev/>
 
-- Solution: <>
+- Solution: <https://www.frontendmentor.io/solutions/vite-react-typescript-zustand-tailwind-8T7J0E9efJ>
